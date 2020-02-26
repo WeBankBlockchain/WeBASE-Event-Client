@@ -1,0 +1,23 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: defaultAccount
+    password: defaultPassword
+    virtual-host:
+    listener:
+      simple:
+        acknowledge-mode: manual
+    ssl:
+      enabled: false
+
+server:
+  port: 5006
+  servlet:
+    context-path: /WeBASE-Event-Client
+
+constant:
+  frontIpPort: 127.0.0.1:5002
+
+logging:
+  config: classpath:log4j2.xml
