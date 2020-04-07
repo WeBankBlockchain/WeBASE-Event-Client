@@ -10,7 +10,7 @@ WeBASE-Event-Client为客户端事件订阅服务。通过调用[WeBASE-Front](h
 
 2. 客户端调用[WeBASE-Front](https://github.com/WeBankFinTech/WeBASE-Front)前置服务接口注册事件监听。
 
-3. 用户在客户端以用户名密码连接到对应的virtual host，监听自己队列的消息(在MQClientListener.java中`@RabbitListener`注解中配置队列名)，接收到消息后解析处理。
+3. 用户在客户端以用户名密码连接到对应的virtual host，监听自己队列的消息（在MQClientListener.java中`@RabbitListener`注解中配置队列名），接收到消息后解析处理。
 
 - [部署说明](./install.md)
 
