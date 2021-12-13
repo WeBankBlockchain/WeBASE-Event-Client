@@ -69,8 +69,9 @@ dependencies {
     
     compile "org.apache.commons:commons-lang3:3.8.1"
     compile "com.alibaba:fastjson:1.2.78"
-    compile "org.fisco-bcos:web3sdk:2.2.0"
-
+    compile('org.fisco-bcos:web3sdk:2.2.0') {
+        exclude group: 'org.ethereum', module: 'solcJ-all'
+    }
     compile lombok
     annotationProcessor lombok
 
